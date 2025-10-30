@@ -8,17 +8,17 @@ const skillsData = {
   design: {
     icon: Palette,
     title: 'Design',
-    skills: ['UI/UX Design', 'Figma', 'Adobe Creative Suite', 'Prototyping', 'Design Systems']
+    skills: ['UI/UX Design', 'Figma',  'Prototyping', 'Design Systems']
   },
   development: {
     icon: Code,
     title: 'Development',
-    skills: ['React/Next.js', 'TypeScript', 'Node.js', 'Python', 'GraphQL', 'PostgreSQL']
+    skills: ['React', 'JavaScript', 'Node.js', 'Python', 'C++','C ', 'PostgreSQL','Firebase','FastAPI', 'Tailwind CSS', 'Express.js']
   },
   tools: {
     icon: Wrench,
     title: 'Tools',
-    skills: ['Git/GitHub', 'Docker', 'AWS', 'Vercel', 'Jest', 'Cypress']
+    skills: ['Git/GitHub', 'Docker', 'AWS', 'Kubernetes', 'Postman',  'VS Code']
   }
 };
 

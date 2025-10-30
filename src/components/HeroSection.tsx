@@ -106,11 +106,11 @@ export const HeroSection = () => {
       <div className="relative z-10 text-center max-w-6xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-12">
         <div className="lg:w-1/2">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 bg-clip-text text-transparent animate-fade-in-up">
-            Design. Develop. Deliver.
+            Intelligent Systems. Seamless Experiences.
           </h1>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
-            I'm Joepaul Vilsan, a Product Designer and Developer creating modern, intuitive, and beautiful web experiences.
+            I'm Joepaul Vilsan, a tech enthusiast and problem-solver who transforms complex challenges into functional solutions across machine learning, IoT, and web development.
           </p>
 
           <Button

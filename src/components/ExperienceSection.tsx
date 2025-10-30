@@ -2,39 +2,22 @@
 import React from 'react';
 import { Briefcase, GraduationCap } from 'lucide-react';
 import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
-
 const experienceData = [
   {
     type: 'work',
-    title: 'Senior Full Stack Developer',
-    organization: 'TechFlow Solutions',
-    period: '2022 - Present',
-    description: 'Leading development of scalable web applications using React, Node.js, and AWS. Mentoring junior developers and architecting cloud-native solutions.',
-    icon: Briefcase
-  },
-  {
-    type: 'work',
-    title: 'Frontend Developer',
-    organization: 'InnovateLab',
-    period: '2020 - 2022',
-    description: 'Developed responsive web applications and mobile apps. Collaborated with design teams to implement pixel-perfect UI components.',
-    icon: Briefcase
+    title: 'Intern',
+    organization: 'Tata Consultancy Services (TCS)',
+    period: 'Jan 2025 - Apr 2025',
+    description: 'Gained hands-on experience with machine learning and signal processing, building sentiment analysis models and developing frontend interfaces with React.',
+    icon: 'Briefcase' // Assuming 'Briefcase' is a component or variable
   },
   {
     type: 'education',
-    title: 'M.S. Computer Science',
-    organization: 'Stanford University',
-    period: '2018 - 2020',
-    description: 'Specialized in Human-Computer Interaction and Machine Learning. Graduated Magna Cum Laude.',
-    icon: GraduationCap
-  },
-  {
-    type: 'work',
-    title: 'Junior Developer',
-    organization: 'StartupX',
-    period: '2017 - 2018',
-    description: 'Built MVP products and contributed to full-stack development. Gained experience in agile development and rapid prototyping.',
-    icon: Briefcase
+    title: 'B.Tech in Computer Science & Business Systems',
+    organization: 'Rajagiri School of Engineering & Technology',
+    period: '2021 - 2025',
+    description: 'Graduated with a CGPA of 8.08.',
+    icon: 'GraduationCap' // Assuming 'GraduationCap' is a component or variable
   }
 ];
 

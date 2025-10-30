@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Mail, Send, Check } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -28,9 +27,9 @@ export const ContactSection = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission - replace with actual email service
+    // This is a simulation. It does NOT send an email.
+    // You must replace this with an email service like Formspree.
     try {
-      // This would be replaced with actual email service like Formspree, Netlify Forms, etc.
       await new Promise(resolve => setTimeout(resolve, 2000));
       
       console.log('Form submitted:', formData);
@@ -156,9 +155,10 @@ export const ContactSection = () => {
                 className="hover:scale-105 transition-transform"
                 asChild
               >
-                <a href="mailto:joepaul@example.com">
+                {/* --- THIS IS THE CORRECTED LINE --- */}
+                <a href="mailto:joepaulvilsan8@gmail.com">
                   <Mail className="mr-3 h-5 w-5" />
-                  joepaul@example.com
+                  joepaulvilsan8@gmail.com
                 </a>
               </Button>
             </div>

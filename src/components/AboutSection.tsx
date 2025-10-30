@@ -3,6 +3,7 @@ import React from 'react';
 import { Download } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useIntersectionObserver } from '@/hooks/useIntersectionObserver';
+import myProfilePic from '@/photos/photo-2.jpg';
 
 export const AboutSection = () => {
   const { ref, isVisible } = useIntersectionObserver({ threshold: 0.1 });
@@ -19,38 +20,41 @@ export const AboutSection = () => {
             {/* Photo Column */}
             <div className="flex justify-center lg:justify-end">
               <div className="relative">
-                <div className="w-80 h-80 rounded-full overflow-hidden shadow-2xl bg-gradient-to-br from-blue-600/20 to-purple-600/20">
-                  <img 
-                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=400&fit=crop&crop=face"
-                    alt="Joepaul Vilsan"
-                    className="w-full h-full object-cover"
-                  />
+                {/* Outer container for shadow and gradient border */}
+                <div className="relative w-80 h-80 rounded-full overflow-hidden shadow-2xl bg-gradient-to-br from-blue-600/20 to-purple-600/20 flex items-center justify-center">
+                  {/* Inner container to hold the image, ensure clipping */}
+                  <div className="w-[calc(100%-10px)] h-[calc(100%-10px)] rounded-full overflow-hidden bg-white">
+                    <img 
+                      src={myProfilePic}
+                      alt="Joepaul Vilsan"
+                      className="w-full h-full object-cover object-top" // object-top helps position face
+                    />
+                  </div>
                 </div>
-                <div className="absolute inset-0 rounded-full bg-gradient-to-br from-blue-600/10 to-purple-600/10"></div>
               </div>
             </div>
 
             {/* Bio Column */}
             <div className="space-y-8">
               <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                I'm a passionate full-stack developer and designer with over 5 years of experience creating 
-                innovative digital solutions. I specialize in building user-centric applications that combine 
-                beautiful design with robust functionality. My expertise spans modern web technologies, 
-                mobile development, and cloud architecture.
+                I am a recent B.Tech graduate in Computer Science and Business Systems, passionate about applying my skills to real-world challenges. My professional experience began at Tata Consultancy Services (TCS), where I interned on projects involving machine learning and signal processing. I am now eager to leverage my academic foundation and hands-on experience to contribute to innovative tech solutions.
               </p>
               
-              <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-                When I'm not coding, you'll find me exploring new design trends, contributing to open-source 
-                projects, or mentoring aspiring developers. I believe in the power of technology to solve 
-                real-world problems and create meaningful impact.
-              </p>
+              
 
-              <Button
+             <Button
                 size="lg"
                 className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white px-8 py-4 rounded-full hover:scale-105 transition-transform"
+                asChild // 1. Add this prop
               >
-                <Download className="mr-2 h-5 w-5" />
-                Download Resume
+                {/* 2. Add the <a> tag as the child */}
+                <a 
+                  href="/Joepaul_Vilsan_Resume.pdf" // 3. Set the path to your file in /public
+                  download="Joepaul_Vilsan_Resume.pdf" // 4. This tells the browser to download it
+                >
+                  <Download className="mr-2 h-5 w-5" />
+                  Download Resume
+                </a>
               </Button>
             </div>
           </div>

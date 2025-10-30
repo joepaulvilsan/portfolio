@@ -1,6 +1,6 @@
-
 import React from 'react';
-import { Github, Linkedin, Twitter, Mail } from 'lucide-react';
+// Import only the icons you need
+import { Linkedin, Mail, Shell } from 'lucide-react';
 
 export const Footer = () => {
   return (
@@ -9,26 +9,29 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Social Links */}
           <div className="flex items-center gap-6">
+            {/* LinkedIn */}
             <a
-              href="#"
-              className="p-3 bg-card/60 backdrop-blur-sm rounded-full border border-border/50 hover:scale-110 transition-transform hover:bg-blue-600 hover:text-white group"
-            >
-              <Github className="h-5 w-5" />
-            </a>
-            <a
-              href="#"
+              href="https://www.linkedin.com/in/joepaul-vilsan"
+              target="_blank" 
+              rel="noopener noreferrer"
               className="p-3 bg-card/60 backdrop-blur-sm rounded-full border border-border/50 hover:scale-110 transition-transform hover:bg-blue-600 hover:text-white group"
             >
               <Linkedin className="h-5 w-5" />
             </a>
+            
+            {/* Dev Community */}
             <a
-              href="#"
+              href="https://dev.to/joepaulvilsan_7"
+              target="_blank" 
+              rel="noopener noreferrer"
               className="p-3 bg-card/60 backdrop-blur-sm rounded-full border border-border/50 hover:scale-110 transition-transform hover:bg-blue-600 hover:text-white group"
             >
-              <Twitter className="h-5 w-5" />
+              <Shell className="h-5 w-5" />
             </a>
+
+            {/* Mail */}
             <a
-              href="mailto:hello@johndoe.dev"
+              href="mailto:joepaulvilsan8@gmail.com"
               className="p-3 bg-card/60 backdrop-blur-sm rounded-full border border-border/50 hover:scale-110 transition-transform hover:bg-blue-600 hover:text-white group"
             >
               <Mail className="h-5 w-5" />
@@ -37,7 +40,7 @@ export const Footer = () => {
 
           {/* Copyright */}
           <p className="text-muted-foreground text-sm">
-            © 2024 John Doe. All rights reserved.
+            © 2025 Joepaul Vilsan. All rights reserved.
           </p>
         </div>
       </div>
